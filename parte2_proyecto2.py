@@ -28,7 +28,8 @@ def buscar_paises(pais, diccionario):
                 print("personas vacunadas hoy", i.get("personas vacunadas hoy"))#vacunados hoy
                 print("\n\n")# 2 salto de lineas 
     except TypeError:# control de excepciones 
-        pass
+        print("se a ingresado mal un dato")
+        
 
     try:# control de excepciones 
         for key, values in diccionario[1].items():# recorre el el diccionario en la posicion "paises"1
@@ -38,7 +39,8 @@ def buscar_paises(pais, diccionario):
                 print("vacunados a la fecha", i.get("vacunados a la fecha"))# imprime vacunado a la fecha
                 print("\n\n")
     except TypeError:# control de excepciones 
-        pass
+        print("se a ingresado mal un dato")
+        
 
 
 def buscar_fecha(fecha, diccionario, pais):
@@ -61,7 +63,7 @@ def buscar_fecha(fecha, diccionario, pais):
                 else:
                     pass
     except TypeError:# control de excepciones 
-        pass
+        print("se a ingresado mal un dato")
 
     try: # control de excepciones 
         for key, values in diccionario[1].items():# recorre el el diccionario en la posicion "paises"1
@@ -74,7 +76,7 @@ def buscar_fecha(fecha, diccionario, pais):
                     #print("no hay registros de esa fecha")
                     pass
     except TypeError:# control de excepciones 
-        pass
+        print("se a ingresado mal un dato")
 
 
 def variable_pais():
